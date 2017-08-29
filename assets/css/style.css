@@ -1,0 +1,255 @@
+/* common elements */
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+body {
+  line-height: 1.4;
+}
+.container {
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+.flex {
+  display: flex;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer {
+  background-color: azure;
+}
+
+/* ---- mobile first ---- */
+
+/* header, nav */
+header {
+  background: url("../images/glasses-bg.png") no-repeat;
+  background-size: cover;
+  background-position: 20%;
+  height: 17rem;
+}
+header img {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+header h1 {
+  display: none;
+}
+header h2 {
+  padding: 1rem 0;
+}
+header .flex {
+  text-align: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  max-width: 1024px;
+  color: white;
+  padding: 1rem 0;
+}
+nav div {
+  display: flex;
+  align-items: center;}
+#tagline {
+  background-color: white;
+  width: 100%;
+  margin-top: 9rem;
+}
+.menu {
+  display: none;
+}
+.mobile {
+  display: initial;
+}
+
+/* main */
+main .flex, section .flex {
+  text-align: center;
+  flex-direction: column;
+  margin: 3.77rem 0;
+}
+main .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 5rem;
+  height: 7rem;
+  margin: 0 auto;
+  font-size: .77rem;
+}
+.paper {
+  width: 3.5rem;
+}
+.ruler, .truck {
+  width: 5rem;
+  margin: 1.54rem;
+}
+.bar {
+  background-color: cadetblue;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin: 0;
+}
+p {
+  text-align: left;
+  padding: 1rem;
+  margin: 0 0 4rem;
+}
+/* footer */
+
+footer {
+  height: 10rem;
+}
+footer h2 {
+  display: none;
+}
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+}
+
+/* ---- tablet sizes ---- */
+
+@media screen and (min-width: 650px)  {
+  /* header, nav */
+  main, section {
+    max-width: 1024px;
+  }
+  header {
+    height: 22rem;
+    background-position: -200px 0;
+  }
+  header h1 {
+    display: initial;
+    margin-left: 1rem;
+  }
+  header h2 {
+    font-size: 1.33rem;
+    padding: 1.5rem 4rem;
+  }
+  header .flex {
+    justify-content: flex-end;
+  }
+  ul li {
+    display: inline;
+  }
+  #tagline {
+    max-width: 60%;
+    margin: 5rem 2rem 0 0;
+  }
+  .menu {
+    display: initial;
+  }
+  .mobile {
+    display: none;
+  }
+  /* main */
+  main .flex {
+    margin: 3rem auto;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  main .container {
+    width: 60%;
+  }
+  main .icon {
+    height: 8rem;
+    margin: 3rem 0;
+    font-size: 1rem;
+  }
+  section .container {
+    max-width: 960px
+  }
+  section .flex {
+    flex-direction: row;
+    margin: 3rem auto;
+    justify-content: center;
+  }
+  .bar {
+    text-align: left;
+    width: 10rem;
+  }
+
+  .vision, .contact {
+    flex-direction: row;
+    width: 35%;
+    margin-right: 5%;
+  }
+  p {
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+
+  /* footer */
+  #copyright {
+    justify-content: flex-start;
+  }
+  footer h2 {
+    display: initial;
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: normal;
+  }
+
+}
+@media screen and (min-width: 650px) and (max-width: 1024px) {
+  .mobile-off {
+
+  }
+
+}
+/* ---- desktop ---- */
+
+@media screen and (min-width: 1025px) {
+/* header, nav */
+header {
+  height: 30rem;
+}
+header h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.container {
+  max-width: 960px;
+}
+#tagline {
+  margin: 10rem -2rem 0 0;
+}
+
+/* main */
+main, section {
+  max-width: 1400px
+}
+main .container {
+  width: 50%;
+}
+
+
+/* footer */
+
+
+}
